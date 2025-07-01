@@ -11,7 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 public class SampleCSRController {
-    @GetMapping
+    @GetMapping(value = "/sample")
 
     public List<SampleData> getSampleList(){
         List<SampleData> sampleDataList = new ArrayList<>();
